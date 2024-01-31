@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+    <title>AgeGateFixed</title>
+</head>
+<body class="flex justify-center items-center m-20">
+    <div class="px-4 pb-16 bg-orange-50 flex flex-col max-w-fit items-center justify-center rounded-lg shadow-2xl">
+      <div class="flex flex-col gap-4 justify-between items-center">
+        <img class="pt-9 mb-10 px-16" src="img/Doobie logo.png" alt="logo">
+        <h1>Select your location</h1>
+        <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="justify-between text-gray-400 bg-white hover:bg-gray-50 focus:ring-2 focus:outline-none focus:ring-gray-400 font-medium rounded-lg text-sm px-5 py-3.5 text-center inline-flex w-full items-center dark:bg-gray-600 dark:hover:bg-blue-700 dark:focus:ring-gray-800" type="button">Select <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+          </svg>
+          </button>
+          
+          <!-- Dropdown menu -->
+          <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+              <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign out</a>
+                </li>
+              </ul>
+          </div>
+            
+      <button id="ageVerified" class="flex py-3 w-full justify-center bg-orange-500 text-white text-base font-medium font-['Good Sans'] leading-tight rounded-lg ml-2 mt-4">I'm over 21</button>
+
+      <a href="#" class="text-cyan-950 text-base font-medium font-['Good Sans']">I'm too young</a>
+
+      <div class="text-center">
+        <span class="text-gray-500 text-xs font-normal font-['Good Sans'] leading-none">By continuing, you agree to our<br/>
+        </span>
+        <a href="privacyPolicy.html" class="text-orange-500 text-xs font-medium font-['Good Sans'] underline leading-none">Terms of Service & Privacy Policy.</a>
+  </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+
+</body>
+</html>

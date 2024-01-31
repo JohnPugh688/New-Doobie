@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+    <title>PrivacyPolicy</title>
+</head>
+<body>
+    <header class= "w-full flex flex-row justify-between p-4  bg-white ">
+    
+        <div class="flex flex-row items-center">
+            
+            <button id="hamburger-button" data-collapse-toggle="navbar-hamburger" type="button" class="inline-flex items-center justify-center p-2 w-10 h-10 text-sm text-cyan-950 rounded-lg  focus:outline-none focus:ring-2 focus:ring-cyan-950 dark:text-cyan-950  dark:focus:ring-gray-600" aria-controls="navbar-hamburger" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M1 1h15M1 7h15M1 13h15"/>
+            </svg>
+            
+          </button>
+         
+          
+         <div class="hidden left-1 top-full w-[300px] max-h-full bg-white"   id="navbar-hamburger">
+      
+          <ul class="shadow-md relative flex flex-col  font-medium rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
+      
+            <div> <button class="shadow-sm flex flex-row mx-6 mt-6 mb-1 justify-center bg-lightgrey text-cyan-950 hover:bg-cyan-950 hover:text-white rounded-full items-center w-[252px] h-[48px]">Sign up</button> 
+            </div>
+      
+            <div><button class="shadow-sm flex flex-row mx-6 justify-center bg-lightgrey text-cyan-950 hover:bg-cyan-950 hover:text-white rounded-full items-center mb-10 w-[252px] h-[48px]">Login</button>
+            </div>
+      
+            
+              <li>
+                <a href="#" class="block py-2 px-3 text-cyan-950 bg-gray-50 hover:bg-cyan-950 hover:text-white rounded dark:bg-blue-600" aria-current="page">Shop</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 px-3 text-cyan-950 bg-gray-50 hover:bg-cyan-950 hover:text-white rounded dark:bg-blue-600" aria-current="page">Merch</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 px-3 text-cyan-950 bg-gray-50 hover:bg-cyan-950 hover:text-white rounded dark:bg-blue-600" aria-current="page">Blog</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 px-3 text-cyan-950 bg-gray-50 hover:bg-cyan-950 hover:text-white rounded dark:bg-blue-600" aria-current="page">Contact</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 px-3 text-cyan-950 bg-gray-50 hover:bg-cyan-950 hover:text-white rounded dark:bg-blue-600" aria-current="page">FAQs</a>
+              </li>
+      
+              <div class="flex flex-row justify-end w-full justify-items-center">
+                <button class="bg-lightblue text-cyan-950 hover: hover:text-white rounded-full w-9 h-9">
+                <img src="img/wheel_right_bl 1.png" alt="wheel chair image">
+              </button>
+              </div>   
+           
+            </ul>
+          </div>
+      
+          <div>
+            <img class="pl-4" src="img/Doobielogowhitebg.png" alt="Logo">
+          </div>
+          <!-- large Search products -->
+          <div class="hidden lg:flex ml-6 flex-row items-center xl:hidden">     
+            <form>   
+              <div class="relative">
+                <div class="absolute inset-y-0 start-0 flex items-center ps-4 pointer-events-none">
+                  <svg class="w-4 h-4 text-gray-700 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                  </svg>
+                </div>
+                <input type="search" id="default-search" class="block w-full p-3 ps-10 pe-10 text-base text-gray-500 font-normal font-sans border border-none rounded-full bg-gray-100 focus:ring-cyan-950 focus:border-cyan-950 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-cyan-950 dark:focus:border-cyan-950" placeholder="Search products..." required>     
+              </div>
+            </form>
+          </div>
+        </div>
+           
+          <div class="flex justify-end items-center ml-2">
+            <div class="hidden md:flex flex-row xl:hidden p-1 bg-gray-100 rounded-full">
+              <div class="flex justify-center items-center h-8 w-8">
+                <img class=" pl-2" src="img/Location.jpg" alt="locationid">
+              </div>
+              <div class="flex justify-center items-center w-full">
+                 <form>        
+                 <input type="search" id="location-search" class="flex px-2 border-hidden items-center h-full text-cyan-950 text-sm font-normal font-['Good Sans'] bg-gray-100 rounded-lg" placeholder="Delivery address" required>
+               
+               </form>
+              </div>
+            
+            </div>
+            <button class="flex justify-center gap-2 items-center bg-gray-100 px-4 py-2 rounded-full ml-2">
+              <img src="img/Cart.png" alt="cart">
+              <div class="text-cyan-950 text-base font-medium font-['Good Sans']
+              ">0</div>
+            </button>
+         </div>
+      
+          </header>
+      
+          <section class="flex flex-col md:justify-center items-center rounded-b-xl px-4 pb-4 bg-white">
+              <!-- small search products -->
+              <div class="flex w-full justify-center ml-6 mr-6 lg:hidden">     
+                  <form class="w-full">   
+                    <div class="relative">
+                      <div class="absolute inset-y-0 start-0 flex items-center ps-4 pointer-events-none">
+                        <svg class="w-4 h-4 text-gray-700 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                        </svg>
+                      </div>
+                      <input type="search" id="default-search" class="block w-full p-3 ps-10 pe-10 text-base text-gray-500 font-normal font-sans border border-none rounded-full bg-gray-100 focus:ring-cyan-950 focus:border-cyan-950" placeholder="Search products..." required>     
+                    </div>
+                  </form>
+                </div>
+                <!-- delivery address -->
+              <div class="md:hidden">
+                <div class="flex justify-center items-center bg-white rounded-lg mt-4">
+                  <div class="flex justify-center items-center h-8 w-8">
+                    <img class="" src="img/Location.jpg" alt="locationid">
+                  </div>
+                  <div>
+                     <form>        
+                     <input type="search" id="location-search" class="flex px-2 border-hidden focus:border-cyan-950 items-center text-gray-400 text-sm font-normal font-['Good Sans'] bg-white rounded-lg" placeholder="123 Division St" required>
+                   </form>
+                  </div>   
+                </div>
+              </div>
+          </section>
+
+          <div class="md:hidden">
+            <hr class="my-1 border-gray-200  dark:border-gray-700" />
+            </div>
+
+          <section>
+            <div class="flex flex-row justify-between gap-16">
+                
+                    <div class="w-full hidden md:block pt-6">
+                       <div class="hidden md:flex cursor-pointer pl-4 flex-row items-center gap-2">
+                         <a class="hidden md:flex cursor-pointer pl-4 flex-row items-center gap-2" href="guest.html">
+                                <img class="w-5 h-5" src="img/Back.png" alt="backarrow"> shop
+                          </a>
+                       </div>
+                    </div>
+                
+                
+               <div class>
+                <div class="flex flex-col justify-center px-4 pt-6 pb-16">
+                    <span class="pb-4 text-cyan-950 text-2xl font-medium font-['Good Sans']">Privacy Policy</span>
+                    <span class="text-cyan-950 text-sm font-light font-['Good Sans'] leading-[18.20px]">DB Delivery MA, LLC d/b/a “Doobie” Privacy Policy<br/><br/>Effective as of October 5, 2022<br/></span><span class="text-cyan-950 text-sm font-medium font-['Good Sans'] leading-[18.20px]">WE VALUE YOUR PRIVACY<br/></span><span class="text-cyan-950 text-sm font-light font-['Good Sans'] leading-[18.20px]">DB Delivery MA, LLC d/b/a Doobie (“Doobie”) is committed to bringing you, via our website and our delivery service, the highest quality cannabis website, products, and services (collectively, the “Services”). We are also committed to maintaining the following Privacy Policy (“Policy”) to protect your personal information (“PI”). Please carefully review this Policy and our Terms of Use Agreement [make this a live link to the T of U] before using our Website, products or services. By clicking on an acceptance button on our Website or using any of the Services, you signify you are in agreement with both our Privacy Policy and our Terms of Use Agreement, subject to our “Changes” sections in each of our Privacy Policy and Terms of Use Agreement.<br/>This Policy informs you of our practices when handling your PI. In this Policy, “Doobie”, “we” or “us” refers to DB Delivery MA, LLC d/b/a Doobie, a company registered in Massachusetts with a business address located at 4 Recovery Road, Wareham, MA 02571.<br/>For the purpose of this Policy, “PI” means any information relating to an identified or identifiable individual particularly where combined with one or more of such individual’s confidential numbers (such as social security, driver’s license or credit/debit card numbers). This includes PI that you provide or generate when you use any Doobie-provided websites (the “Website”) or associated software, services or products. When you use the Services, you accept and understand that we collect, use, and store your PI as described in this Policy.<br/>If you do not agree with this Policy, you must not use any of the Services. If you change your mind in the future, you must stop using the Services and you may exercise your rights concerning your PI as set out in this Policy.<br/><br/></span><span class="text-cyan-950 text-sm font-medium font-['Good Sans'] leading-[18.20px]">INFORMATION WE COLLECT<br/>We will collect and use the following information about you:<br/>Information you provide to us:<br/>Registration Information.</span><span class="text-cyan-950 text-sm font-light font-['Good Sans'] leading-[18.20px]"> When you create an account on our Website or through any other available channel that links to the Services, you will be asked to provide your name, residential address, date of birth, email and/or telephone number, and a password, among other possible information. For all paid Services, we will rely on a payment processing partner which may also collect your name, billing address, and payment information. Payment information is not shared with us and is maintained by our payment processing partner.<br/></span><span class="text-cyan-950 text-sm font-medium font-['Good Sans'] leading-[18.20px]">Communication Information.</span><span class="text-cyan-950 text-sm font-light font-['Good Sans'] leading-[18.20px]"> When you contact us, you provide us with your telephone or cell phone number and/or email, and any other information you choose to provide over such communication, including information about any queries you ask over the website, the telephone or other communications channels.<br/></span><span class="text-cyan-950 text-sm font-medium font-['Good Sans'] leading-[18.20px]">Information you provide us about others:<br/></span><span class="text-cyan-950 text-sm font-light font-['Good Sans'] leading-[18.20px]">If you choose to refer us to your family or friends or other third parties, you provide us with the email and/or cell phone number and a description of their relationship to you, among other information.<br/></span><span class="text-cyan-950 text-sm font-medium font-['Good Sans'] leading-[18.20px]">Information we automatically collect or is generated about you when using the Services:<br/>Usage Information: </span><span class="text-cyan-950 text-sm font-light font-['Good Sans'] leading-[18.20px]">When you use the Website or Services, you generate information pertaining to your use, including timestamps, such as access, share, edit and delete order information, Website use information, interactions with our team, and transaction records.<br/></span><span class="text-cyan-950 text-sm font-medium font-['Good Sans'] leading-[18.20px]">Device Information:</span><span class="text-cyan-950 text-sm font-light font-['Good Sans'] leading-[18.20px]"> We may assign a unique user identifier (“UUID”) to each mobile device that accesses the Services. When you use our Services, you provide information such as your IP address, UUIDs, device IDs, web beacons and other device information (such as carrier type, whether you access our Services from a desktop or mobile platform, device model, brand, web browser and operating system).<br/></span><span class="text-cyan-950 text-sm font-medium font-['Good Sans'] leading-[18.20px]">Cookies:</span><span class="text-cyan-950 text-sm font-light font-['Good Sans'] leading-[18.20px]"> We may use Cookies and other similar technologies (“Cookies”) to enhance your experience when using the Services.<br/></span><span class="text-cyan-950 text-sm font-medium font-['Good Sans'] leading-[18.20px]">Information received from third parties:<br/>Information we receive from third-party platforms:</span><span class="text-cyan-950 text-sm font-light font-['Good Sans'] leading-[18.20px]"> When you connect third-party platforms, apps or providers (such as Google Calendar, iCal or other calendar programs, Google Contacts or Zoom) to our Services, or when you register through a third-party account (such as Google or Microsoft), if applicable, we may receive PI that includes your username, profile picture, email address, time, location, calendar information, contact information from such third parties and any information you choose to upload to such third-party platforms (“Platform Information”).<br/></span><span class="text-cyan-950 text-sm font-medium font-['Good Sans'] leading-[18.20px]">Information from platforms our Services rely on.</span><span class="text-cyan-950 text-sm font-light font-['Good Sans'] leading-[18.20px]"> Where applicable, we receive transaction information from our payment processor partner.<br/></span><span class="text-cyan-950 text-sm font-medium font-['Good Sans'] leading-[18.20px]">Other third parties.</span><span class="text-cyan-950 text-sm font-light font-['Good Sans'] leading-[18.20px]"> We may receive additional information about you, such as demographic or interest attributes from third parties such as data or marketing partners and combine it with other information we have about you.<br/>Information when you contact us using a mobile device:<br/>When you access and use the Website or Services from your mobile devices, we receive information from your mobile device. This may include your location data, IP address and device type. You may manage how your mobile device and mobile browser share location information with us, as well as how your mobile browser handles cookies and related technologies by adjusting your mobile device privacy and security settings. Please refer to instructions provided by your mobile service provider or the manufacturer of your device to learn how to adjust your settings.<br/></span><span class="text-cyan-950 text-sm font-medium font-['Good Sans'] leading-[18.20px]">HOW WE USE YOUR PERSONAL INFORMATION<br/>We use your PI to:<br/>Set up your account. </span><span class="text-cyan-950 text-sm font-light font-['Good Sans'] leading-[18.20px]">We use your registration information, device information and any information received from third parties in order to set up an account for you to use our Services. We do so in accordance with our contractual and precontractual obligations to you in order to provide you with an account to use the Services.<br/></span><span class="text-cyan-950 text-sm font-medium font-['Good Sans'] leading-[18.20px]">Provide you with the Services.</span><span class="text-cyan-950 text-sm font-light font-['Good Sans'] leading-[18.20px]"> We use your account information, service orders, platform information, queries and other information in order to provide you with the Services. In addition, we may use your communication information to facilitate support (e.g. retrieval of a forgotten password). We do so in accordance with our contractual obligations to you in order to provide you with the Services.<br/></span><span class="text-cyan-950 text-sm font-medium font-['Good Sans'] leading-[18.20px]">Improve and monitor the Services.</span><span class="text-cyan-950 text-sm font-light font-['Good Sans'] leading-[18.20px]"> We may use information we automatically collect or generate about you when you use the Services, as well as non-PI about your device such as device manufacturer, model and operating system, and the amount of free space on your device, to analyze the use of and improve our Services.<br/></span><span class="text-cyan-950 text-sm font-medium font-['Good Sans'] leading-[18.20px]">Communicate with you. </span><span class="text-cyan-950 text-sm font-light font-['Good Sans'] leading-[18.20px]">If you contact us, we will use your contact information to communicate with you and, if applicable, review your usage information to support your use of the Services.<br/></span><span class="text-cyan-950 text-sm font-medium font-['Good Sans'] leading-[18.20px]">Send you newsletters about product news or updates that may be of interest to you.</span><span class="text-cyan-950 text-sm font-light font-['Good Sans'] leading-[18.20px]"> We may send you emails or texts with news or updates pertaining to our Services. When doing so, we process your name, email address, and cell phone number used for texting, and may process your usage information. </span><span class="text-cyan-950 text-sm font-medium font-['Good Sans'] leading-[18.20px]">When you place an order with us, either through our website or through a service provider, we treat that as an opt in to receive product news and updates from us, via emails and texts or both.</span><span class="text-cyan-950 text-sm font-light font-['Good Sans'] leading-[18.20px]"> Your consent can be withdrawn at any time by following the unsubscribe mechanism at the bottom of each communication.<br/></span><span class="text-cyan-950 text-sm font-medium font-['Good Sans'] leading-[18.20px]">Prevent fraud, defend Doobie against legal claims or disputes, enforce our terms and to comply with our legal obligations.</span><span class="text-cyan-950 text-sm font-light font-['Good Sans'] leading-[18.20px]"> It is in our legitimate interest to protect our interests by (1) monitoring the use of the Services to detect fraud or any other user behavior which prejudices the integrity of our Services, (2) taking steps to remedy aforementioned fraud and behavior, (3) defending ourselves against legal claims or disputes, and (4) enforcing our terms and policies. When doing so, we will use the PI relevant in such a case, including information you provide us, information we automatically collect about you, and information which is provided to us by third parties.<br/></span><span class="text-cyan-950 text-sm font-medium font-['Good Sans'] leading-[18.20px]">Use data in aggregated form. </span><span class="text-cyan-950 text-sm font-light font-['Good Sans'] leading-[18.20px]">We also may collect and use aggregated data such as statistical or demographic data for our purposes. Aggregated data may be derived from your PI but is not PI, as this data will not directly or indirectly reveal your identity. However, if we combine or connect aggregated data with your PI so that it can directly or indirectly identify you, we will treat the combined data as PI which will be used in accordance with this Policy.<br/></span><span class="text-cyan-950 text-sm font-medium font-['Good Sans'] leading-[18.20px]">HOW WE USE COOKIES AND SIMILAR TECHNOLOGIES<br/></span><span class="text-cyan-950 text-sm font-light font-['Good Sans'] leading-[18.20px]">We and our third-party partners may use cookies, pixel tags, and similar technologies to collect information about your browsing activities and to distinguish you from other users of our Services in order to aid your experience and measure and improve our advertising effectiveness.<br/>Cookies are small files of letters and numbers that we store on your browser or on your device. They contain information that is transferred to your device.<br/>We use cookies to collect information about your browsing activities and to distinguish you from other users of our Services in order to aid your experience.<br/></span><span class="text-cyan-950 text-sm font-medium font-['Good Sans'] leading-[18.20px]">We use the following types of Cookies and similar technologies:<br/>Strictly necessary Cookies:</span><span class="text-cyan-950 text-sm font-light font-['Good Sans'] leading-[18.20px]"> Some Cookies are strictly necessary to make our Services available to you; for example, to provide login functionality, user authentication and security. We cannot provide you with the Services without this type of Cookie.<br/></span><span class="text-cyan-950 text-sm font-medium font-['Good Sans'] leading-[18.20px]">Functional Cookies:</span><span class="text-cyan-950 text-sm font-light font-['Good Sans'] leading-[18.20px]"> These are used to recognize you when you use and then return to our Website. This enables us to personalize our content for you and remember your preferences.<br/></span><span class="text-cyan-950 text-sm font-medium font-['Good Sans'] leading-[18.20px]">Analytical, performance, or advertising Cookies: </span><span class="text-cyan-950 text-sm font-light font-['Good Sans'] leading-[18.20px]">We also may use Cookies and similar technologies for analytics purposes in order to operate, maintain, and improve our Services and measure and improve our advertising effectiveness. We may use third-party analytic providers to help us understand how users engage with us.<br/>You can block Cookies by setting your internet browser to block some or all or Cookies. However, if you use your browser settings to block all Cookies (including essential Cookies) you may not be able to use our Services. Except for essential Cookies, all Cookies will expire after a maximum of two years.<br/></span><span class="text-cyan-950 text-sm font-medium font-['Good Sans'] leading-[18.20px]">WITH WHOM WE SHARE YOUR PERSONAL INFORMATION<br/>We may share your PI with selected third parties, including:<br/></span><span class="text-cyan-950 text-sm font-light font-['Good Sans'] leading-[18.20px]">Personnel affiliated with any of our business or enterprise partners<br/>Vendors and service providers we rely on for the provision of the Services, including:<br/>Cloud service providers who we rely on for computer and data storage.<br/>Platform support providers who help us manage and monitor the Services.<br/>Analytic providers who provide analytics, segmentation and mobile measurement services and help us understand our user base.<br/></span><span class="text-cyan-950 text-sm font-medium font-['Good Sans'] leading-[18.20px]">Payment processors. </span><span class="text-cyan-950 text-sm font-light font-['Good Sans'] leading-[18.20px]">Where applicable, payment processors are responsible for the processing of your PI, and may use your PI for their own purposes in accordance with their privacy policies.<br/></span><span class="text-cyan-950 text-sm font-medium font-['Good Sans'] leading-[18.20px]">Law enforcement agencies, public authorities or other judicial bodies and organizations.</span><span class="text-cyan-950 text-sm font-light font-['Good Sans'] leading-[18.20px]"> We disclose PI if we are legally required to do so, or if we have a good faith belief that such use is reasonably necessary to comply with a legal obligation, process or request; enforce our terms of service and other agreements, policies, and standards, including investigation of any potential violation thereof; detect, prevent or otherwise address security, fraud or technical issues; or protect the rights, property or safety of us, our users, a third party or the public as required or permitted by law (including exchanging information with other companies and organizations for the purposes of fraud protection).<br/></span><span class="text-cyan-950 text-sm font-medium font-['Good Sans'] leading-[18.20px]">Change of corporate ownership.</span><span class="text-cyan-950 text-sm font-light font-['Good Sans'] leading-[18.20px]"> If we are involved in a merger, acquisition, bankruptcy, reorganization, partnership, asset sale or other transaction, we may disclose your PI as part of that transaction.<br/></span><span class="text-cyan-950 text-sm font-medium font-['Good Sans'] leading-[18.20px]">HOW LONG WE STORE YOUR INFORMATION<br/></span><span class="text-cyan-950 text-sm font-light font-['Good Sans'] leading-[18.20px]">Doobie stores all PI for as long as necessary to fulfill the purposes set out in this Policy, or for as long as we are required to do so by law or in order to comply with a regulatory obligation. When deleting PI, we will take measures to render such PI irrecoverable or irreproducible, and the electronic files which contain PI will be permanently deleted<br/></span><span class="text-cyan-950 text-sm font-medium font-['Good Sans'] leading-[18.20px]">YOUNG ADULTS AND CHILDREN<br/></span><span class="text-cyan-950 text-sm font-light font-['Good Sans'] leading-[18.20px]">As required by applicable law, the Services are not targeted at children or any young adults under the age of 21, and we do not knowingly collect PI from underage individuals. If you learn that a child or young adult has provided us with PI in violation of this Policy, please contact us as indicated below.<br/></span><span class="text-cyan-950 text-sm font-medium font-['Good Sans'] leading-[18.20px]">CONTACT AND COMPLAINTS<br/></span><span class="text-cyan-950 text-sm font-light font-['Good Sans'] leading-[18.20px]">For inquiries or complaints regarding this Policy, please first contact us at [add email address] and we will endeavor to deal with your complaint as soon as possible. This is without prejudice to any right to raise claims or bring legal actions with applicable legal authorities.<br/></span><span class="text-cyan-950 text-sm font-medium font-['Good Sans'] leading-[18.20px]">DATA SECURITY<br/></span><span class="text-cyan-950 text-sm font-light font-['Good Sans'] leading-[18.20px]">We use certain physical, managerial, and technical safeguards that are designed to improve the integrity and security of PI that we collect and maintain. However, the transfer of PI through the internet will carry its own inherent risks and we do not guarantee the security of your data transmitted through the internet. You make any such transfer at your own risk.<br/>The Website and Services may provide features or links to websites and services provided by third parties. Any information you provide on third-party websites or services is provided directly to the operators of such websites or services and is subject to their policies governing privacy and security, even if accessed via our Website or in connection with our Services.<br/></span><span class="text-cyan-950 text-sm font-medium font-['Good Sans'] leading-[18.20px]">CHANGES IN PRIVACY POLICY<br/></span><span class="text-cyan-950 text-sm font-light font-['Good Sans'] leading-[18.20px]">Where required, we will update this Policy from time to time. When we do so, we will make it available on this page and indicate the date of the latest revision on the first page of this Policy. Please check this page frequently to see any updates or changes to this Policy.<br/></span><span class="text-cyan-950 text-sm font-medium font-['Good Sans'] leading-[18.20px]">ABOUT US<br/></span><span class="text-cyan-950 text-sm font-light font-['Good Sans'] leading-[18.20px]">If you have any questions, comments or concerns about our Privacy Policy, you may contact us by email at [add email address] or by phone or mail to:<br/>DB Delivery MA, LLC d/b/a Doobie<br/>4 Recovery Road, Wareham, MA 02571</span>
+                  </div>
+               </div>
+               
+            </div>
+            
+          </section>
+
+          <footer class="bg-sky-950">
+            <div class="sm:grid sm:grid-rows-2 md:grid-cols-2 max-w-screen-2xl p-4 py-6 lg:py-8">
+                 <!-- left side -->
+                <div>
+                  
+                     <!-- locations -->
+                    <div class="mb-6 flex gap-8">
+                        <div>
+                            <h2 class="mb-6 text-white text-2xl font-thin font-['Gascogne-Bold']">Locations</h2>
+                            <ul class="text-white text-sm font-medium font-['Good Sans'] leading-7">
+                                <li class="mb-2">
+                                    <a href="" class="hover:underline">San Francisco</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="" class="hover:underline">Palm Springs</a>
+                                </li>
+                                <li class="mb-2">
+                                  <a href="" class="hover:underline">St. Louis</a>
+                                </li>
+                                <li class="mb-2">
+                                  <a href="" class="hover:underline">Boston</a>
+                                </li>
+                                <li>
+                                  <a href="" class="hover:underline">Cape Cod</a>
+                                </li>
+                            </ul>
+                        </div>
+            
+                        <!-- zip codes -->
+                        <div class="pt-14">
+                            <ul class="text-gray-500 dark:text-gray-400 text-sm font-normal font-['Good Sans'] leading-7">
+                                <li class="mb-2">
+                                    <a href="" class="hover:underline">C10-000632-LIC</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="" class="hover:underline">C10-0000284-LIC</a>
+                                </li>
+                                <li class="mb-2">
+                                  <a href="" class="hover:underline">MO#DIS000031</a>
+                                </li>
+                                <li class="mb-2">
+                                  <a href="" class="hover:underline">MD1258</a>
+                                </li>
+                                <li>
+                                  <a href="" class="hover:underline">MD1258</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>        
+                </div>
+          
+               <!-- right side -->
+               <div class="flex flex-row gap-10 ">
+                 <div>
+                   <h2 class="mb-6 text-white text-2xl font-thin font-['Gascogne-Bold'] dark:text-white">Menu</h2>
+                   <ul class="text-white text-sm font-normal font-['Good Sans']m">
+                       <li class="mb-2">
+                           <a href="" class="hover:underline">Shop all</a>
+                       </li>
+                       <li class="mb-2">
+                           <a href="" class="hover:underline">Blog</a>
+                       </li>
+                       <li class="mb-2">
+                         <a href="" class="hover:underline">Contact</a>
+                       </li>
+                       <li class="mb-2">
+                         <a href="" class="hover:underline">Careers</a>
+                       </li>
+                       <li>
+                         <a href="" class="hover:underline">Doobie Direct</a>
+                       </li>
+                    </ul>
+                  </div>
+             
+                 <div>
+                  <h2 class="mb-6 text-white text-2xl font-thin font-['Gascogne-Bold'] dark:text-white">Contact us</h2>
+                   <ul class="mb-6 text-white text-sm font-normal font-['Good Sans']m">
+                      <li class="mb-2">
+                          <a href="" class="hover:underline">(888) 836-6243</a>
+                      </li>
+                      <li class="mb-2">
+                          <a href="" class="hover:underline">hello@trydoobie.com </a>
+                      </li>                  
+                   </ul>
+           
+                   <div class="flex gap-3 mt-10">
+                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       <rect width="24" height="24" fill="#C9C9C9"/>
+                       <g id="Guest Homepage">
+                       <g id="Mobile - Footer">
+                       <rect id="Rectangle 511" width="375" height="601" transform="matrix(1 0 0 -1 -168 209)" fill="#043852"/>
+                       <g id="Group 648">
+                       <path id="Vector" d="M19 0H5C2.239 0 0 2.239 0 5V19C0 21.761 2.239 24 5 24H19C21.762 24 24 21.761 24 19V5C24 2.239 21.762 0 19 0ZM8 19H5V8H8V19ZM6.5 6.732C5.534 6.732 4.75 5.942 4.75 4.968C4.75 3.994 5.534 3.204 6.5 3.204C7.466 3.204 8.25 3.994 8.25 4.968C8.25 5.942 7.467 6.732 6.5 6.732ZM20 19H17V13.396C17 10.028 13 10.283 13 13.396V19H10V8H13V9.765C14.396 7.179 20 6.988 20 12.241V19Z" fill="white"/>
+                       </g>
+                       </g>
+                       </g>
+                      </svg>
+                    </a>
+                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       <path id="Vector" d="M12 2.163C15.204 2.163 15.584 2.175 16.85 2.233C20.102 2.381 21.621 3.924 21.769 7.152C21.827 8.417 21.838 8.797 21.838 12.001C21.838 15.206 21.826 15.585 21.769 16.85C21.62 20.075 20.105 21.621 16.85 21.769C15.584 21.827 15.206 21.839 12 21.839C8.796 21.839 8.416 21.827 7.151 21.769C3.891 21.62 2.38 20.07 2.232 16.849C2.174 15.584 2.162 15.205 2.162 12C2.162 8.796 2.175 8.417 2.232 7.151C2.381 3.924 3.896 2.38 7.151 2.232C8.417 2.175 8.796 2.163 12 2.163ZM12 0C8.741 0 8.333 0.014 7.053 0.072C2.695 0.272 0.273 2.69 0.073 7.052C0.014 8.333 0 8.741 0 12C0 15.259 0.014 15.668 0.072 16.948C0.272 21.306 2.69 23.728 7.052 23.928C8.333 23.986 8.741 24 12 24C15.259 24 15.668 23.986 16.948 23.928C21.302 23.728 23.73 21.31 23.927 16.948C23.986 15.668 24 15.259 24 12C24 8.741 23.986 8.333 23.928 7.053C23.732 2.699 21.311 0.273 16.949 0.073C15.668 0.014 15.259 0 12 0V0ZM12 5.838C8.597 5.838 5.838 8.597 5.838 12C5.838 15.403 8.597 18.163 12 18.163C15.403 18.163 18.162 15.404 18.162 12C18.162 8.597 15.403 5.838 12 5.838ZM12 16C9.791 16 8 14.21 8 12C8 9.791 9.791 8 12 8C14.209 8 16 9.791 16 12C16 14.21 14.209 16 12 16ZM18.406 4.155C17.61 4.155 16.965 4.8 16.965 5.595C16.965 6.39 17.61 7.035 18.406 7.035C19.201 7.035 19.845 6.39 19.845 5.595C19.845 4.8 19.201 4.155 18.406 4.155Z" fill="white"/>
+                     </svg>
+                    </a>
+                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       <path id="Vector" d="M22.675 0H1.325C0.593 0 0 0.593 0 1.325V22.676C0 23.407 0.593 24 1.325 24H12.82V14.706H9.692V11.084H12.82V8.413C12.82 5.313 14.713 3.625 17.479 3.625C18.804 3.625 19.942 3.724 20.274 3.768V7.008L18.356 7.009C16.852 7.009 16.561 7.724 16.561 8.772V11.085H20.148L19.681 14.707H16.561V24H22.677C23.407 24 24 23.407 24 22.675V1.325C24 0.593 23.407 0 22.675 0V0Z" fill="white"/>
+                     </svg>                                          
+                    </a>                     
+                  </div>
+                 </div>
+               </div>
+              
+              <!-- horizontal line -->
+              <div class="col-span-2">  
+                <div>
+                  <hr class="my-6 border-gray-200  dark:border-gray-700" />
+                </div>
+                <!-- Terms -->
+                <div class="md:flex justify-between">
+                  <div class="md:flex justify-between">
+                  <div class="mb-2 flex items-center">
+                    <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Doobie™</a>. All Rights Reserved.
+                    </span>        
+                  </div>
+                </div> 
+                <div class="flex gap-6 mb-10 md:mb-0">
+                    <a href="privacyPolicy.html">
+                        <button class="text-white text-xs font-normal font-['Good Sans'] underline">Privacy policy</button>
+                    </a>
+                  
+                  <button class="text-white text-xs font-normal font-['Good Sans'] underline">Terms of use</button>
+                </div> 
+                </div>
+                   
+              </div>
+            </div>
+          </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>   
+</body>
+</html>
